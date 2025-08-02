@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates Slider</title>
+    <link rel="stylesheet" href="certification.css" />
+
+</head>
+
+<body>
+    <h1>🎓 My Certificates</h1>
+    <div class="slider-container">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+
+        <div class="slide active">
+            <img class="cert-img" src="pw java.jpg" alt="Java Certificate" />
+            <div class="cert-title">Java Certificate by PW Skills</div>
+            <div class="cert-desc">Java Programming Certificate, validating expertise in development, and
+                problem-solving using Java technologies.</div>
+            <div class="cert-desc">2025</div>
+            <button class="btn" onclick="viewCertificate(this)">View Certificate</button>
+        </div>
+
+        <div class="slide">
+            <img class="cert-img" src="generative ai.jpg" alt="HTML Certificate" />
+            <div class="cert-title">Microsoft Generative AI Certificate</div>
+            <div class="cert-desc">Career Essentials in Generative AI.</div>
+            <div class="cert-desc">2025</div>
+            <button class="btn" onclick="viewCertificate(this)">View Certificate</button>
+        </div>
+
+        <div class="slide">
+            <img class="cert-img" src="Javascript info.jpg" alt="HTML Certificate" />
+            <div class="cert-title">JavaScript Developer Certification</div>
+            <div class="cert-desc">Advanced JavaScript development concepts and best practices certification.</div>
+            <div class="cert-desc">2025</div>
+            <button class="btn" onclick="viewCertificate(this)">View Certificate</button>
+        </div>
+
+        <div class="slide">
+            <img class="cert-img" src="Sql.jpg" alt="HTML Certificate" />
+            <div class="cert-title">IBM Certificate</div>
+            <div class="cert-desc">SQL and Relational Databases.</div>
+            <div class="cert-desc">2024</div>
+            <button class="btn" onclick="viewCertificate(this)">View Certificate</button>
+        </div>
+
+        <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div id="fullscreen" class="fullscreen" style="display: none">
+        <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+        <img id="full-img" src="" alt="Full Certificate" />
+    </div>
+    <script src="certification.js"></script>
+</body>
+
+</html>
